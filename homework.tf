@@ -6,7 +6,7 @@ resource "aws_iam_group" "developers" {
   name = "developers"
   path = "/"
 }
-resource "aws_iam_group" "developers" {
+resource "aws_iam_group" "Management" {
   name = "Management"
   path = "/"
 }
@@ -18,7 +18,7 @@ resource "aws_iam_user" "Bob" {
   name = "Bob"
 }
 
-resource "aws_iam_user" "Bob" {
+resource "aws_iam_user" "Ben" {
   name = "Ben"
 }
 

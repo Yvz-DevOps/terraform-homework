@@ -11,6 +11,17 @@ resource "aws_iam_group" "developers" {
   path = "/"
 }
 
+resource "aws_iam_user" "tim" {
+  name = "Tim"
+}
+resource "aws_iam_user" "tim" {
+  name = "Bob"
+}
+
+resource "aws_iam_user" "tim" {
+  name = "Ben"
+}
+
 resource "aws_iam_group_membership" "developers_team" {
   name = "developers-group-membership"
 
@@ -34,14 +45,4 @@ resource "aws_iam_group_membership" "Management_team" {
 
 
 
-resource "aws_iam_user" "tim" {
-  name = "Tim"
-}
-resource "aws_iam_user" "tim" {
-  name = "Bob"
-}
-
-resource "aws_iam_user" "tim" {
-  name = "Ben"
-}
 
